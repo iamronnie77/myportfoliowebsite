@@ -262,7 +262,7 @@
             <h1><span>Contact</span> Me</h1>
         </div>
         <div class="contact-form">
-            <form onsubmit="sendEmail()">
+            <form action="https://formsubmit.co/iamronnie77@gmail.com" method="POST" onsubmit="sendEmail()">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" name="" id="" placeholder="Enter Your Email" required>
                 <input type="text" name="" id="" placeholder="Phone no." required>
@@ -270,29 +270,10 @@
                 <input type="submit" value="Send" class="send-btn">
             </form>
         </div>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail(){
-                Email.send({
-                    Host : "pop.gmail.com",
-                    Username : "iamronnie77@gmail.com",
-                    Password : "Street12",
-                    To : 'ronald.ajewole@gmail.com',
-                    From : document.getElementById("email").value,
-                    Subject : "New Contact Form Enquiry",
-                    Body : "Name: " + document.getElementById("name").value
-                        + "<br> Email: " + document.getElementById("email").value
-                        + "<br> Phone no: " + document.getElementById("phone").value
-                        + "<br> Message: " + document.getElementById("message").value
-                }).then(
-                message => alert("Message Sent Successfully")
-                );
-            }
-        </script>
     </section>
     <!-- Copyright -->
     <div class="copyright">
-        <p>&#169; Cybersecurity Analyst All Right Reserved.</p>
+        <p>&#169; Ronald Ajewole - All Right Reserved.</p>
     </div>
 
 <!-- Scroll Reveal -->
