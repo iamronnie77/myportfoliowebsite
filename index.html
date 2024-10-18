@@ -262,10 +262,10 @@
             <h1><span>Contact</span> Me</h1>
         </div>
         <div class="contact-form">
-            <form action="https://formsubmit.co/iamronnie77@gmail.com" method="POST" onsubmit="sendEmail()">
+            <form onsubmit="sendEmail()">
                 <input type="text" placeholder="Your Name" required>
-                <input type="email" name="" id="" placeholder="Enter Your Email" required>
-                <input type="text" name="" id="" placeholder="Phone no." required>
+                <input type="email" name="email" id="emailId" placeholder="Enter Your Email" required>
+                <input type="text" name="phone" id="phoneNumber" placeholder="Phone no." required>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
                 <input type="submit" value="Send" class="send-btn">
             </form>
@@ -274,10 +274,8 @@
         <script>
             function sendEmail(){
                 Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "iamronnie77@gmail.com",
-                    Password : "Street12",
-                    To : "iamrohnny70@gmail.com",
+                    SecureToken : "a7f020d7-dc18-41b6-b125-043d0f8698e6",
+                    To : "iamronnie77@gmail.com",
                     From : document.getElementById("email").value,
                     Subject : "New Contact Form Enquiry",
                     Body : "Name: " + document.getElementById("name").value
