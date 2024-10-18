@@ -171,8 +171,8 @@
              <!-- Box 3 -->
              <div class="box">
                 <i class='bx bxs-archive'></i>
-                <h2>Active Directory (Home Lab) </h2>
-                <p>Set up an Active Directory (home lab) that includes Splunk, Kali Linux & Atomic Red Team</p>
+                <h2>Active Directory </h2>
+                <p>Set up an Active Directory that includes Splunk, Kali Linux & Atomic Red Team</p>
             </div>
              <!-- Box 4 -->
              <div class="box">
@@ -276,7 +276,7 @@
                 Email.send({
                     SecureToken : "a7f020d7-dc18-41b6-b125-043d0f8698e6",
                     To : "iamronnie77@gmail.com",
-                    From : "info@ronnytech.com",
+                    From : document.getElementById("email").value,
                     Subject : "New Contact Form Enquiry",
                     Body : "Name: " + document.getElementById("name").value
                         + "<br> Email: " + document.getElementById("email").value
